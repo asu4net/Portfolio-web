@@ -1,0 +1,15 @@
+{
+    "cards":
+    [
+        {
+            "videoPath":"resources/videos/sword.mp4",
+            "title":"YES, MY SOWRD",
+            "description":"Game"
+        },
+        {
+            "videoPath":"resources/videos/sword.mp4",
+            "title":"YES, MY SOWRD",
+            "description":"Game"
+        }
+    ]
+}
