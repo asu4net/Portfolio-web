@@ -1,0 +1,39 @@
+html, body, .cards 
+{
+    height: 100%;
+}
+
+body {
+    background-color: rgb(185, 207, 255);
+}
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card
+{
+    overflow: hidden;
+    border: 0px !important;
+    
+    border-radius: 2%;
+    width: 300px;
+    transition: transform .2s;
+    margin: 30px;
+    height: fit-content;
+    max-height: 400px;
+}
+
+.card:hover
+{
+    transform: scale(1.2);
+}
+
+.card-body 
+{
+    overflow-y: auto;
+}
+
+

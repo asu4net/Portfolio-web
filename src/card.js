@@ -1,10 +1,9 @@
 const cardsResourcePath = "resources/json/cards.json";
 const cardContainer = ".cards";
 const cardVideoFormat = "video/mp4";
-const cardWidth = "18rem";
-
 class Card 
 {
+    cardInstance;
     videoPath;
     title;
     description;
@@ -15,8 +14,7 @@ class Card
         this.title = title;
         this.description = description;
 
-        let cards = document.querySelector(cardContainer);
-        cards.append(this.createCard());
+        this.cardInstance = this.createCard();
     }
 
     createBody()
@@ -39,8 +37,10 @@ class Card
     {
         let video = document.createElement("video");
         video.classList.add("embed-responsive-item");
-        video.controls = true;
+
+        //TODO: this not seems to be working...
         video.autoplay = true;
+        video.controls = true;
         video.loop = true;
         video.mute = true;
 
@@ -56,7 +56,6 @@ class Card
     {
         let card = document.createElement("div");    
         card.classList.add("card");
-        card.style.width = cardWidth;
         card.append(this.createVideo(), this.createBody());
         return card;
     }
