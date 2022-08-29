@@ -1,39 +1,80 @@
-html, body, .cards 
-{
+html,
+body,
+.cards {
     height: 100%;
 }
 
 body {
-    background-color: rgb(185, 207, 255);
+    background-image: url(/src/resources/images/background.jpg);
 }
-.cards
-{
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 720px) {
+    .profile{
+        flex-direction: column;
+    }
+    .profile>div{
+        width: auto !important;
+    }
+}
+
+.profile {
+    display: flex;
+    min-height: 10%;
+    max-width: 1000px;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.profile>div {
+    padding: 10px;
+}
+
+.title {
+    font-size: .8cm;
+    font-family: 'PT Sans Caption', sans-serif;
+    padding-top: 2%;
+}
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.card
-{
+.card {
+    box-shadow: 5px 5px 20px #00000063;
     overflow: hidden;
     border: 0px !important;
-    
     border-radius: 2%;
-    width: 300px;
+    width: 400px;
     transition: transform .2s;
     margin: 30px;
     height: fit-content;
-    max-height: 400px;
+    max-height: 600px;
 }
 
-.card:hover
-{
+.card:hover {
     transform: scale(1.2);
 }
 
-.card-body 
-{
+.card-body {
     overflow-y: auto;
 }
 
+.social-icons {
 
+    padding: 10px;
+    font-size: 30px;
+}

@@ -28,7 +28,7 @@ class Card
 
         let description = document.createElement("p");
         description.classList.add("card-text");
-        description.innerText = this.description;
+        description.innerHTML = this.description;
 
         body.append(title, description);
         return body;
