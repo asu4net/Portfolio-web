@@ -5,7 +5,7 @@ body,
 }
 
 body {
-    background-image: url(/src/resources/images/background.jpg);
+    background-image: url(/src/resources/images/background_tileable.jpg);
 }
 
 .content {
@@ -59,13 +59,16 @@ body {
     border: 0px !important;
     border-radius: 2%;
     width: 400px;
-    transition: transform .2s;
     margin: 30px;
     height: fit-content;
     max-height: 600px;
 }
 
-.card:hover {
+.card.closed {
+    transition: transform .2s;
+}
+
+.card.closed:hover {
     transform: scale(1.2);
 }
 

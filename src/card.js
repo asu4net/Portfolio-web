@@ -7,12 +7,14 @@ class Card
     videoPath;
     title;
     description;
-    
-    constructor(videoPath, title, description)
+    link;
+
+    constructor(videoPath, title, description, link)
     {
         this.videoPath = videoPath;
         this.title = title;
         this.description = description;
+        this.link = link;
 
         this.cardInstance = this.createCard();
     }
@@ -35,28 +37,32 @@ class Card
     }
     createVideo()
     {
-        let video = document.createElement("video");
-        video.classList.add("embed-responsive-item");
-
-        //TODO: this not seems to be working...
-        video.autoplay = true;
-        video.controls = true;
-        video.loop = true;
-        video.mute = true;
-
+        let newVideo = document.createElement("video");
+        newVideo.classList.add("embed-responsive-item");
+        
+        newVideo.muted = true;
+        newVideo.autoplay = true;
+        newVideo.loop = true;
+        newVideo.controls = true;
+        
         let source = document.createElement("source");
         source.src = this.videoPath;
         source.type = cardVideoFormat;
 
-        video.append(source);
+        newVideo.append(source);
 
-        return video;
+        return newVideo;
     }
     createCard()
     {
         let card = document.createElement("div");    
         card.classList.add("card");
+        card.classList.add("closed");
         card.append(this.createVideo(), this.createBody());
+    
+        card.link = this.link;
+        card.onclick = function() { window.open(this.link, '_blank'); };
+
         return card;
     }
 }

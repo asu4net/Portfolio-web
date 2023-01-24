@@ -4,27 +4,42 @@
         {
             "videoPath":"resources/videos/sword.mp4",
             "title":"YES, MY SWORD",
-            "description":"Game"
+            "description":"3D Top Down action unity game. Lead programmer and technical project architecture designer.",
+            "link": "https://www.therookies.co/entries/17571"
         },
         {
-            "videoPath":"resources/videos/sword.mp4",
-            "title":"YES, MY SWORD",
-            "description":"Lorem <br/>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "videoPath":"resources/videos/Mindcaster.mp4",
+            "title":"Mindcaster",
+            "description":"Narrative bullet hell unity game. Lead programmer and boss fight programmer.",
+            "link": "https://kronegames.itch.io/mindcaster-demo"
         },
         {
-            "videoPath":"resources/videos/sword.mp4",
-            "title":"YES, MY SWORD",
-            "description":"Game"
+            "videoPath":"resources/videos/Voxel Wing Fighter.mp4",
+            "title":"Voxel Wing Fighter",
+            "description":"Procedural infinite runner Star Wars fan unity game. Practical application of the Perlin Noise function in Unity."
         },
         {
-            "videoPath":"resources/videos/sword.mp4",
-            "title":"YES, MY SWORD",
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "videoPath":"resources/videos/asteroids.mp4",
+            "title": "My own 2D Game Engine: Zote",
+            "description": "C++ & OPENGL Engine 2D developed for my final university assignment.",
+            "link": "https://github.com/asu4net/Zote"
         },
         {
-            "videoPath":"resources/videos/sword.mp4",
-            "title": "NOBI NOBI BOX",
-            "description": "Esto es un buen jueguito"
+            "videoPath":"resources/videos/TALOS.mp4",
+            "title": "TALOS VR",
+            "description": ""
+        },
+        {
+            "videoPath":"resources/videos/Orbit Finder.mp4",
+            "title": "Adrián Heras: Orbit Finder",
+            "description": "",
+            "link": "https://jmguillen.itch.io/adrian-heras-orbit-finder"
+        },
+        {
+            "videoPath":"resources/videos/Heat Beat and Repeat!.mp4",
+            "title": "Heat Beat and Repeat!",
+            "description": "A blacksmith rythym game.",
+            "link": "https://tigersonalex.itch.io/heat-beat-n-repeat"
         }
     ]
 }
